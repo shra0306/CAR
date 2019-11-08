@@ -1,0 +1,28 @@
+b{
+    font-size: 26px;
+}
+
+label{
+    width: 7em;
+    margin-right: 4em;
+    text-align: right;
+}
+button{
+    margin-left:310px;
+    width: 150px;
+    height:50px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+
+
+}
+
+.form-rounded {
+    border-radius: 1rem;
+    width: 40px;
+    height: 60px;  
+    }
+    
+    input[type=text],[type=password] {
+        background-color:whitesmoke;
+      }

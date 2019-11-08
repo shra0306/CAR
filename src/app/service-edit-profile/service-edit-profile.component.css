@@ -1,0 +1,29 @@
+b{
+    font-size: 26px;
+}
+
+img{
+    margin-left: 30px;
+}
+button{
+   
+  width: 420px;
+  height:60px;  
+    border-radius: 30px;
+    
+    
+}
+ input[type=text] {
+    background-color:whitesmoke;
+    color: white;
+  }
+  textarea
+  {
+    background-color:whitesmoke;
+    color: white;
+  }
+  .form-rounded {
+    border-radius: 1rem;
+    width: 40px;
+    height: 60px;  
+    }

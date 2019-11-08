@@ -1,0 +1,35 @@
+b{
+    font-size: 26px;
+}
+.card{
+  max-width: 55rem; 
+  
+  }
+  button{
+   
+    width: 420px;
+    height:50px;  
+    border-radius: 30px;
+    
+    
+}
+ input[type=text],[type=password] {
+    background-color:whitesmoke;
+  }
+  select{
+    background-color:whitesmoke;
+  }
+  textarea
+      {
+        background-color:whitesmoke;
+      }
+      .form-rounded {
+        border-radius: 1rem;
+        width: 40px;
+        height: 60px;  
+        }
+    
+ label{
+    margin-right: 7em;
+    text-align: center;
+}

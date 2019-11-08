@@ -1,0 +1,31 @@
+<div class="container jumbotron  text-center"><b>User Login</b>
+    <div class="card form-group col-sm-12">
+    <div class="card-body form-group col-sm-12">
+    <form action=""[formGroup]="data"(ngSubmit)="login(data.value)">
+    <div class="row form-group col-sm-12"> 
+    <label for="mobileN" class="col-sm-2" >Mobile</label>
+         <input type="text" name="mobileN" id="mobileN" class=" alert form-rounded form-control col-sm-6"formControlName="mobileN">
+   </div>
+     <div class="row form-group col-sm-12">       
+   <label for="password" class="col-sm-2">Password</label>
+         <input type="password" name="password" id="password" class=" alert form-rounded form-control col-sm-6"formControlName="password">          
+               </div>
+               <div class="row form-group col-sm-12">
+                <div class="col-sm-2"></div>
+              <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="form-rounded custom-control-input" id="customCheck" name="example1">
+                  <label class=" alert custom-control-label " for="customCheck" >Remember Me</label>
+                </div>
+              </div> 
+     <div class="row">
+     <button type="submit" class="btn btn-info">Login</button>
+      <button type="submit" class="btn btn-info">Cancel</button>
+     </div>
+     <div class="row">
+<label for="name" class="col-sm-4">Forgot Password .....?</label>
+     </div>
+     </form>
+    </div>
+   </div>
+   </div>
+   

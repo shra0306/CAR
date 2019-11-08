@@ -1,0 +1,36 @@
+/* .sidenav {
+  height: 100%; 
+  width: 15%; 
+  position: fixed;
+  z-index: 1; 
+  top: 1; 
+  left: 0;
+  background-color: #0a0909;
+  overflow-x: hidden; 
+  padding-top: 10px;
+  
+  
+}
+
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #818181;
+  display: block;
+}
+
+
+.sidenav a:hover {
+  color: #f1f1f1;
+} */
+
+/* .outlet{
+  height: 100%; 
+  width: 85%;
+  position: absolute;
+  z-index: 1; 
+  top: 1; 
+  right:  0;
+} */

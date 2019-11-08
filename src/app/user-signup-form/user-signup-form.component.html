@@ -1,0 +1,46 @@
+
+<div class="container text-center " >
+            <div class="form-group col-sm-12"></div>
+
+      <div class="card col-md-12 form-group shadow-lg offset-3"><b>Sign-up </b>
+ <div class="card-body  col-sm-12">
+      <form action=""[formGroup]="bookwashModel" (ngSubmit)="onClick(bookwashModel.value)">
+ <div class="row form-group col-sm-12"> 
+       <div class="form-group col-sm-2"></div>
+      <input type="text" name="name" id="name" class=" alert form-rounded form-control  col-sm-9 alert m-0" formControlName="name" placeholder="Name">
+      </div>
+      <div class="row form-group col-sm-12"> 
+<!-- <div class="row form-group col-sm-4" ></div>
+      <div class="alert alert-danger col-sm-6 ml-md-n5" *ngIf="loginModel.controls['name'].hasError('required')">
+            Name is required
+  </div>  -->
+</div>
+  <div class="row form-group col-sm-12"> 
+            <div class="form-group col-sm-2"></div>
+      
+      <input type="text" name="mono" id="mono" class=" alert form-rounded form-control  col-sm-9 alert m-0"formControlName="mobilenumber"placeholder="Mobile No.">          
+            </div>
+            <div class="row form-group col-sm-12">  
+                        <div class="form-group col-sm-2"></div>
+     
+                     <input type="text" name="otp" id="otp" class=" alert form-rounded form-control  col-sm-9 alert m-0"formControlName="email"placeholder="Email">          
+                           </div>
+                           <div class="row form-group col-sm-12">
+                                    <div class="col-sm-3  ml-lg-n4"> </div>
+                                       <button type="submit" class=" col-sm-9 button btn btn-primary m-0"(click)="gotoPageGenrateOtp()">Generate OTP</button>
+                              </div>
+                                 <div class="row form-group col-sm-12">  
+                                          <div class="form-group col-sm-2"></div>
+                       
+                                       <input type="text" name="enterotp" id="enterotp" class="alert form-rounded form-control  col-sm-9 alert m-0"formControlName="enterotp"placeholder="Enter OTP">          
+                                             </div>
+                                             <div class="row form-group col-sm-12">
+                                                      <div class="col-sm-2"></div>
+                                                   <button type="submit" class=" button btn btn-primary mr-2 col-sm-4 row ml-lg-3">Submit</button>
+                                                   <button type="submit" class="button btn btn-danger col-sm-4">Cancel</button>
+                     
+                                                </div>
+            </form>
+ </div>
+</div>
+</div>

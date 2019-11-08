@@ -1,0 +1,87 @@
+<div class="container text-center w-75 mt-3">
+    {{bookwashModel.value|json}}
+
+  <div class="card shadow-lg"><b>Booking For Wash/Maintainence</b>
+<div class="card-body ">
+
+<form action=""[formGroup]="bookwashModel" (ngSubmit)="onClick(bookwashModel.value)">
+    <div class="row text-center form-group col-sm-12">
+<div class="col-sm-3"></div>
+        <input type="text" name="vihiname" id="vihiname" class=" alert form-rounded form-control col-sm-6"placeholder="Vehicle Name/Model"formControlName="vihiclename">
+    </div>
+  <div class="row form-group col-sm-12">
+<div class="col-sm-3"></div>
+    <select id="inputState"class=" alert form-rounded form-control col-sm-6 form-control-lg"placeholder="Vehicle Type"formControlName="vehicletype"> 
+      <option value="">Vehicle Type</option>
+      <option selected>2 Wheeler</option>
+
+      <option selected>3 Wheeler</option>
+      <option selected>4 Wheeler</option>
+      <option selected>6 Wheeler</option>
+      <option selected>Cancel</option>
+      
+    </select>
+  </div> 
+  <div class="row text-center form-group col-sm-12">
+<div class="col-sm-3"></div>
+    <input type="text" name="conpname" id="conpname" class="alert form-rounded form-control col-sm-6" placeholder="Contact Person Name"formControlName="contactPersonName">
+</div>
+<div class="row text-center form-group col-sm-12">
+    <div class="form-group col-sm-3"></div>
+
+    <input type="text" name="conpmobile" id="conpmobile" class=" alert form-rounded form-control col-sm-6"placeholder="Contact Details"formControlName="contactdetails">
+</div>
+<div class="row form-group col-sm-12">
+    <div class="col-sm-3"></div>
+        <select id="inputState"class=" alert form-rounded form-control col-sm-6 form-control-lg"placeholder="Service Type"formControlName="servicetype">
+          <option value="">Service Type</option> 
+          <option selected>Wash</option>
+ 
+          <option selected>Maintenance</option>
+          <option selected>Wash Maintenance</option>
+          <option selected>Other</option>
+          <option selected>Cancel</option>
+
+        </select>
+      </div>
+  <div class="row form-group col-sm-12">
+      <div class="form-group col-sm-3"></div>
+
+        <textarea class=" alert form-rounded form-control col-sm-6" rows="5" id="comment"placeholder="Requirements/Description*"formControlName="requireDescription"></textarea>
+      
+  </div>
+  <div class="row text-center form-group col-sm-12">
+<div class="col-sm-3"></div>
+      <label for="pickup" class="col-sm-3 alert-link mx-xl-n2">Need Pick-up</label>
+      <div class="custom-control radio">
+        <input type="radio"  id="radio" name="Yes"formControlName="needpickup">
+        <label  for="radio">Yes</label>
+        <input type="radio"  id="radio" name="No"formControlName="needpickup">
+
+        <label  for="radio">No</label>
+</div>
+  </div>
+  <div class="row text-center form-group col-sm-12">
+      <div class="form-group col-sm-3"></div>
+<input type="text" name="arealocation" id="arealocation" class="alert form-rounded form-control col-sm-6"placeholder="Area Location"formControlName="arealocation">
+</div>
+<div class="row text-center form-group col-sm-12">
+  <div class="form-group col-sm-3" ></div>
+<input type="date" name="pickupdate" placeholder="Pick-up-Date" class="alert form-rounded form-control col-sm-6"formControlName="pickupdate">
+</div>
+<div class="row text-center form-group col-sm-12">
+    <div class="form-group col-sm-3"></div>
+
+    <input type="text" name="budprice" id="budprice" class="alert form-rounded form-control col-sm-6" placeholder="Budget Price"formControlName="budprice">
+</div>
+<div class="row form-group col-sm-12">
+  <div class="col-sm-3"></div>
+<button type="submit" class=" button btn btn-primary mr-1 col-sm-3 row ml-lg-1">Submit</button>
+<button type="submit" class="button btn btn-danger col-sm-3">Cancel</button>
+
+</div>
+</form>
+</div>
+</div>
+
+</div>
