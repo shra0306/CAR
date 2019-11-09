@@ -17,7 +17,7 @@ export class UserLoginComponent {
   }
 
   login() {
-    if (this.data.value.mobileN === 'Appa' && this.data.value.password === 'password') {
+    if (this.data.value.mobileN === 'Ashwini' && this.data.value.password === 'password') {
       this.router.navigate(['/home']);
 
     } else {

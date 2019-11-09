@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,14 +8,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
-  constructor(private router: Router) { }
-
+  loginModel :FormGroup;
+  
+  constructor(private router: Router) { 
+    
+  }
+ 
   gotoPageHome() {
     this.router.navigate(['/home']);
   }
-  
-
   ngOnInit() {
   }
 

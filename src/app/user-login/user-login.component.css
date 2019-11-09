@@ -1,6 +1,8 @@
 
 b{
     font-size: 26px;
+    color: #000;
+    background-color:cornflowerblue;
 }
 .form-rounded {
     border-radius: 1rem;

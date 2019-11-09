@@ -4,7 +4,6 @@ import { HomeComponent } from './home/home.component';
 import { UserSignupFormComponent } from './user-signup-form/user-signup-form.component';
 import { SetPasswordComponent } from './set-password/set-password.component';
 import { UserLoginComponent } from './user-login/user-login.component';
-import { BokkingForWashComponent } from './layout/bokking-for-wash/bokking-for-wash.component';
 import { EditProfileComponent } from './layout/edit-profile/edit-profile.component';
 import { ServicecentersignupComponent } from './service-center-signup/service-center-signup.component';
 import { ServiceCenterLoginComponent } from './service-center-login/service-center-login.component';
@@ -19,6 +18,8 @@ import { OneTimePasswordComponent } from './one-time-password/one-time-password.
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { ServiceOneTimePasswordComponent } from './service-one-time-password/service-one-time-password.component';
 import { MasterComponent } from './master/master.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { BokkingForWashComponent } from './layout/bokking-for-wash/bokking-for-wash.component';
 
 
 export const routes: Routes = [
@@ -30,7 +31,6 @@ export const routes: Routes = [
   { path: 'forgot_password', component:  ForgotPasswordComponent},
   { path: 'service-center-signup', component: ServicecentersignupComponent },
   { path: 'service_one_time_password', component: ServiceOneTimePasswordComponent },
-
   { path: 'Set_password_form', component: SetPasswordComponent },
   { path: 'User_loginForm', component: UserLoginComponent },
   { path: 'Booking_for_wash', component: BokkingForWashComponent },
@@ -42,8 +42,9 @@ export const routes: Routes = [
   { path: 'change_password', component: ChangePasswordComponent },
   { path: 'confirmed_orders', component: ConfirmedOrdersComponent},
   { path: 'wallet_details', component: WalletDetailsComponent},
-  { path: 'layout', component: LayoutComponent }
-  // {path : '',redirectTo:'/Home',pathMatch:'full'},
+  { path: 'layout', component: LayoutComponent },
+  //   { path: 'page_not_found', component: PageNotFoundComponent },
+  //  {path : '',redirectTo:'',pathMatch:'full'},
 
 
 ];

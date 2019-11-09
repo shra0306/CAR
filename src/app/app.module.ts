@@ -8,7 +8,6 @@ import { HomeComponent } from './home/home.component';
 import { UserSignupFormComponent } from './user-signup-form/user-signup-form.component';
 import { ServicecentersignupComponent } from './service-center-signup/service-center-signup.component';
 import { SetPasswordComponent } from './set-password/set-password.component';
-import { BokkingForWashComponent } from './layout/bokking-for-wash/bokking-for-wash.component';
 import { EditProfileComponent } from './layout/edit-profile/edit-profile.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { ServiceCenterLoginComponent } from './service-center-login/service-center-login.component';
@@ -24,6 +23,8 @@ import { MasterComponent } from './master/master.component';
 import { OneTimePasswordComponent } from './one-time-password/one-time-password.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { ServiceOneTimePasswordComponent } from './service-one-time-password/service-one-time-password.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { BokkingForWashComponent } from './layout/bokking-for-wash/bokking-for-wash.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { ServiceOneTimePasswordComponent } from './service-one-time-password/ser
     OneTimePasswordComponent,
     ForgotPasswordComponent,
     ServiceOneTimePasswordComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -71,6 +73,7 @@ import { ServiceOneTimePasswordComponent } from './service-one-time-password/ser
       { path: 'service_center_login', component: ServiceCenterLoginComponent },
       { path: 'service_edit_profile', component: ServiceEditProfileComponent },
       { path: 'layout', component: LayoutComponent },
+      { path: '**', component: PageNotFoundComponent },
 
       // {path : '',redirectTo:'/Home',pathMatch:'full'},
     ])
